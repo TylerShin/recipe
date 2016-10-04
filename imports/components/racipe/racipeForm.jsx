@@ -10,7 +10,7 @@ class RecipeForm extends React.Component {
     return (
       <div className="racipe-form-component">
         <form>
-          <div>
+          <div className="recipeName-wrapper">
             <label>레시피 이름</label>
             <input type="text" placeholder="레시피 이름" />
           </div>

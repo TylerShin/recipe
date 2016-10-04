@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:meteor/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "env": {
+    "meteor": true
+  },
+  "globals": {
+    "Kakao": true,
+    "meteor": true,
+    "Meteor": true
+  },
+  "plugins": [
+    "meteor"
+  ],
+  "rules": {
+    "func-names": "off",
+    "no-param-reassign": "off",
+    "arrow-body-style": "off",
+    "max-len": "off",
+    "new-cap": "off",
+    "global-require": "off",
+    "no-underscore-dangle": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off"
+  }
+}
