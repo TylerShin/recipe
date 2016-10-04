@@ -1,5 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import React from 'react';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { render } from 'react-dom';
 import { applyRouterMiddleware, Router, browserHistory } from 'react-router';
 import { useScroll } from 'react-router-scroll';
@@ -13,6 +14,8 @@ injectTapEventPlugin();
 
 Meteor.startup(() => {
   render(
-    <Router history={browserHistory} children={routes} render={applyRouterMiddleware(useScroll())} />,
+    <MuiThemeProvider>
+      <Router history={browserHistory} children={routes} render={applyRouterMiddleware(useScroll())} />
+    </MuiThemeProvider>,
     document.getElementById('app'));
 });
